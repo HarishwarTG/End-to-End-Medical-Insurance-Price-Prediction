@@ -28,10 +28,9 @@ class DataTransformation:
         
         '''
         try:
-            numerical_columns = ["age", "bmi"]
+            numerical_columns = ["age", "bmi","children"]
             categorical_columns = [
                 "sex",
-                "children",
                 "smoker",
                 "region"
             ]
@@ -48,7 +47,7 @@ class DataTransformation:
 
                 steps=[
                 ("imputer",SimpleImputer(strategy="most_frequent")),
-                ("one_hot_encoder",OneHotEncoder()),
+                ("one_hot_encoder",OneHotEncoder(handle_unknown='ignore')),
                 ("scaler",StandardScaler(with_mean=False))
                 ]
 
@@ -85,7 +84,7 @@ class DataTransformation:
             preprocessing_obj=self.get_data_transformer_object()
 
             target_column_name="charges"
-            numerical_columns = ["age", "bmi"]
+            numerical_columns = ["age", "bmi","children"]
 
             input_feature_train_df=train_df.drop(columns=[target_column_name],axis=1)
             target_feature_train_df=train_df[target_column_name]
