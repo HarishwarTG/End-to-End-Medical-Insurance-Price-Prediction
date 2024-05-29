@@ -28,38 +28,35 @@ class PredictPipeline:
 
 class CustomData:
     def __init__(  self,
-        gender: str,
-        race_ethnicity: str,
-        parental_level_of_education,
-        lunch: str,
-        test_preparation_course: str,
-        reading_score: int,
-        writing_score: int):
+        age: int,
+        sex: str,
+        bmi: int,
+        children: int,
+        smoker: str,
+        region: str):
 
-        self.gender = gender
+        self.age = age
 
-        self.race_ethnicity = race_ethnicity
+        self.sex = sex
 
-        self.parental_level_of_education = parental_level_of_education
+        self.bmi = bmi
 
-        self.lunch = lunch
+        self.children = children
 
-        self.test_preparation_course = test_preparation_course
+        self.smoker = smoker
 
-        self.reading_score = reading_score
+        self.region = region
 
-        self.writing_score = writing_score
 
     def get_data_as_data_frame(self):
         try:
             custom_data_input_dict = {
-                "gender": [self.gender],
-                "race_ethnicity": [self.race_ethnicity],
-                "parental_level_of_education": [self.parental_level_of_education],
-                "lunch": [self.lunch],
-                "test_preparation_course": [self.test_preparation_course],
-                "reading_score": [self.reading_score],
-                "writing_score": [self.writing_score],
+                "age": [self.age],
+                "sex": [self.sex],
+                "bmi": [self.bmi],
+                "children": [self.children],
+                "smoker": [self.smoker],
+                "region": [self.region],
             }
 
             return pd.DataFrame(custom_data_input_dict)
