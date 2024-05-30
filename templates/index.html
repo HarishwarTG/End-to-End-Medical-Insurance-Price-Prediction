@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Performance Prediction</title>
+    <title>Medical Insurance Price Prediction</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f2f2f2;
+            color: #333;
         }
         
         header {
-            background-color: #333;
+            background-color: #4CAF50;
             color: #fff;
             padding: 20px;
             text-align: center;
@@ -21,10 +22,11 @@
         
         main {
             max-width: 800px;
-            margin: 0 auto;
+            margin: 20px auto;
             padding: 20px;
             background-color: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
         }
         
         section {
@@ -42,16 +44,16 @@
         
         img {
             display: block;
-            margin: 0 auto;
+            margin: 20px auto;
             max-width: 100%;
             height: auto;
         }
         
         .btn {
             display: block;
-            margin: 0 auto;
+            margin: 20px auto;
             padding: 10px 20px;
-            background-color: #333;
+            background-color: #4CAF50;
             color: #fff;
             text-decoration: none;
             border-radius: 5px;
@@ -59,32 +61,71 @@
         }
         
         .btn:hover {
-            background-color: #555;
+            background-color: #45a049;
+        }
+        
+        .animated-man {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
+            animation: bounce 2s infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-30px);
+            }
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #4CAF50;
+            color: #fff;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Medical Insurance price Prediction</h1>
+        <h1>Medical Insurance Price Prediction</h1>
     </header>
     
     <main>
         <section>
-            <h2>Welcome to the Medical Insurance price prediction Project</h2>
-            <p>This project aims to develop a machine learning model that can predict a student's performance in mathematics based on various factors such as gender, ethnicity, parental level of education, lunch type, test preparation course, and scores in reading and writing.</p>
+            <h2>Welcome to the Medical Insurance Price Prediction Project</h2>
+            <p>This project aims to develop a machine learning model that can predict medical insurance charges based on various factors such as age, sex, BMI, number of children, smoking status, and region.</p>
         </section>
         
         <section>
             <h2>Project Overview</h2>
-            <p>The project involves collecting and preprocessing data, exploring and visualizing the data, building and training machine learning models, and deploying the best model for prediction. The goal is to provide an accurate and reliable tool for educators and students to assess their potential performance and take necessary steps to improve their academic outcomes.</p>
-            <img src="https://www.edutopia.org/sites/default/files/styles/responsive_768/public/blog/machine-learning-education-stock-getty-1215296610.jpg" alt="Machine Learning in Education">
+            <p>The project involves collecting and preprocessing data, exploring and visualizing the data, building and training machine learning models, and deploying the best model for prediction. The goal is to provide an accurate and reliable tool for individuals to estimate their medical insurance charges and make informed decisions.</p>
+            <img src="https://cdn.gencraft.com/prod/user/0be7c526-5fb8-444d-8db7-b89095b4cd9e/a68130fd-5388-431d-b1a9-a14f53286175/image/image0_0.jpg?Expires=1724861041&Signature=Wq5eymUtWNhYnjDJ3XY3dkJrLHhdvrtiYg2lSKl4lhuTsOBjr4RgTpxVLVjnaHInHitujykwFLToHTpw1fAJYg1RXBCSq67kD4oASSL82XBEMzCwfaVDdbjTJHH5WFdT2M7VSrfnnV30pxDemvWFfsFRpKnXwl3HK9D3gNjaQK5gzMrzYzVYv9n0wNTc3g7~gxnPU9SZz18Qn7m5JA4~daU067y3lQ4kgBwYiEYQLSqTN6XPGv3KU5i0gs2PZ7YxFamwkTJ0QQUPDYdGhte9R13qa3GKhobwa56kI7GeD2iE-OH4x59ACnz9KgzcXBgqwgGutkciLvIbnZgYf~cVcg__&Key-Pair-Id=K3RDDB1TZ8BHT8" alt="Machine Learning in Education">
         </section>
         
         <section>
             <h2>Try the Prediction Tool</h2>
-            <p>You can now try our prediction tool by clicking the button below. Fill in the required information, and our machine learning model will predict your potential math score.</p>
+            <p>You can now try our prediction tool by clicking the button below. Fill in the required information, and our machine learning model will predict your potential medical insurance charges.</p>
             <a href="http://127.0.0.1:5000/predictdata" class="btn">Predict Price</a>
         </section>
+        
+        <section>
+            <h2>About the Developer</h2>
+            <p>My name is Harishwar, and I am an aspiring data scientist. This is my first end-to-end machine learning project. I used a variety of technologies to build this project, including Python, Pandas, NumPy, Scikit-Learn for the Linear Regression model, Flask for the web application, and HTML/CSS for the frontend.</p>
+            <p>You can find the complete project on my GitHub: <a href="https://github.com/HarishwarTG/END-TO-END-MEDICAL-INSURANCE-PRICE-PREDICTION">GitHub Repository</a></p>
+            <p>Connect with me on LinkedIn: <a href="https://www.linkedin.com/in/harishwartg/">LinkedIn Profile</a></p>
+            <img src="https://drive.google.com/file/d/1_ltFPErWx4WaigbfeZ_mwDIzxkCDfVua/view?usp=drive_link" alt="Animated Man Taking Medical Insurance" class="animated-man">
+        </section>
     </main>
+
+    <footer>
+        <p>Thanks to Krish Naik for the end-to-end tutorial. This webpage is generated using ChatGPT.</p>
+    </footer>
 </body>
 </html>

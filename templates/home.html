@@ -1,65 +1,166 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Insurance Price Prediction</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f6f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login {
+            background: white;
+            padding: 2em;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .form-label {
+            font-weight: bold;
+            color: #555;
+        }
+        .form-control {
+            width: 100%;
+            padding: 0.5em;
+            margin: 0.5em 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 0.75em 1.5em;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+        .mb-3 {
+            margin-bottom: 1em;
+        }
+        .animated-person {
+            width: 100px;
+            margin: 1em auto;
+        }
+        .emoji {
+            font-size: 1.5em;
+            margin-right: 0.5em;
+        }
+        .btn-group {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .btn-group .btn-option {
+            flex: 1;
+            margin: 0.25em;
+            padding: 0.5em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .btn-group .btn-option:hover, .btn-group .btn-option.selected {
+            background-color: #007bff;
+            color: white;
+        }
+        .slider-container {
+            display: flex;
+            align-items: center;
+        }
+        .slider-container input[type=range] {
+            margin: 0 1em;
+            flex: 1;
+        }
+    </style>
+</head>
 <body>
     <div class="login">
-        <h1>Medical Insurance Price Prediction</h1>
-    
+        <img src="https://cdn.gencraft.com/prod/user/0012c782-fd37-469b-9819-180b914d4ecf/15b53f7b-0d20-4f67-aa27-e83949481f57/image/image1_0.jpg?Expires=1717170943&Signature=PpUAxFPMwL-kG-ESDlgs0StJa99JkWoisS~PHQu69yVxVQgnG0wk071RaiR5l15rGKnSW8iSUNRv3hNT3r0cJ3H1J9rbCJ6Pb63uBgxo2RIViScEvS0B4gkiPTGAubCwgvBZ2l8ckEDBTd29yHNYqPVaHwMg5eXjhw0BoE8fFkqaVz6GLzM~KcrAmghh0rPPIlmvTEw~D-OujPW-gca2XfWTh4S2OR2~h8QObSnNkNI7MzzG9ZzYLnAmT5Kyh6r5Db941yS3EIu7qpWBwnD19EUtVbF6JsaEdTFuRCrxqGUrdq3ufSC8qVkrDlz0dVD4fUNIn2ZTuA6Q8u8UbyGwLw__&Key-Pair-Id=K3RDDB1TZ8BHT8" alt="Animated Person" class="animated-person">
+        <h1>Medical Insurance Price Prediction 💡</h1>
         <form action="{{ url_for('predict_datapoint')}}" method="post">
-            <h1>
-                <legend>Medical Insurance Price Prediction</legend>
-            </h1>
+            <legend>Get Your Insurance Estimate 🏥</legend>
             <div class="mb-3">
-                <label class="form-label">Age</label>
-                <input class="form-control" type="number" name="age" placeholder="Enter your Age" min="0" required />
+                <label class="form-label">Age 👶👵</label>
+                <div class="slider-container">
+                    <span>0</span>
+                    <input class="form-control" type="range" name="age" min="0" max="100" value="30" oninput="this.nextElementSibling.value = this.value">
+                    <output>30</output>
+                </div>
             </div>
             <div class="mb-3">
-                <label class="form-label">Gender</label>
-                <select class="form-control" name="sex" placeholder="Enter your Gender" required>
-                    <option class="placeholder" selected disabled value="">Select your Gender</option>
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                </select>
+                <label class="form-label">Gender 🚻</label>
+                <div class="btn-group">
+                    <div class="btn-option" data-value="male">Male</div>
+                    <div class="btn-option" data-value="female">Female</div>
+                </div>
+                <input type="hidden" name="sex" required>
             </div>
             <div class="mb-3">
-                <label class="form-label">BMI</label>
+                <label class="form-label">BMI 📊</label>
                 <input class="form-control" type="number" name="bmi" placeholder="Enter your BMI" step="0.1" min="0" required />
             </div>
             <div class="mb-3">
-                <label class="form-label">Children</label>
-                <select class="form-control" name="children" placeholder="Enter number of children" required>
-                    <option class="placeholder" selected disabled value="">Select number of children</option>
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
+                <label class="form-label">Children 👶</label>
+                <div class="btn-group">
+                    <div class="btn-option" data-value="0">0</div>
+                    <div class="btn-option" data-value="1">1</div>
+                    <div class="btn-option" data-value="2">2</div>
+                    <div class="btn-option" data-value="3">3</div>
+                    <div class="btn-option" data-value="4">4</div>
+                    <div class="btn-option" data-value="5">5</div>
+                </div>
+                <input type="hidden" name="children" required>
             </div>
             <div class="mb-3">
-                <label class="form-label">Smoker</label>
-                <select class="form-control" name="smoker" placeholder="Enter if you smoke" required>
-                    <option class="placeholder" selected disabled value="">Are you a smoker?</option>
-                    <option value="yes">Yes</option>
-                    <option value="no">No</option>
-                </select>
+                <label class="form-label">Smoker 🚬</label>
+                <div class="btn-group">
+                    <div class="btn-option" data-value="yes">Yes</div>
+                    <div class="btn-option" data-value="no">No</div>
+                </div>
+                <input type="hidden" name="smoker" required>
             </div>
             <div class="mb-3">
-                <label class="form-label">Region</label>
-                <select class="form-control" name="region" placeholder="Enter your region" required>
-                    <option class="placeholder" selected disabled value="">Select your region</option>
-                    <option value="southwest">Southwest</option>
-                    <option value="southeast">Southeast</option>
-                    <option value="northwest">Northwest</option>
-                    <option value="northeast">Northeast</option>
-                </select>
+                <label class="form-label">Region 🌍</label>
+                <div class="btn-group">
+                    <div class="btn-option" data-value="southwest">Southwest</div>
+                    <div class="btn-option" data-value="southeast">Southeast</div>
+                    <div class="btn-option" data-value="northwest">Northwest</div>
+                    <div class="btn-option" data-value="northeast">Northeast</div>
+                </div>
+                <input type="hidden" name="region" required>
             </div>
             <div class="mb-3">
-                <input class="btn btn-primary" type="submit" value="Predict Insurance Price" />
+                <input class="btn btn-primary" type="submit" value="Predict Insurance Price 🧮" />
             </div>
         </form>
         <h2>
-            THE prediction is {{results}}
+            Your estimated insurance price is ₹{{results}} 💰
         </h2>
     </div>
+
+    <script>
+        document.querySelectorAll('.btn-option').forEach(button => {
+            button.addEventListener('click', function() {
+                const group = this.parentElement;
+                group.querySelectorAll('.btn-option').forEach(btn => btn.classList.remove('selected'));
+                this.classList.add('selected');
+                group.nextElementSibling.value = this.getAttribute('data-value');
+            });
+        });
+    </script>
 </body>
 </html>
