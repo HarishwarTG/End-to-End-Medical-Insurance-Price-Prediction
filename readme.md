@@ -31,9 +31,9 @@ Machine Learning,Python
 **5.Model Evaluation and Deployment:** The best-performing model is selected and deployed using Flask for real-world applications.
 ## Screenshots
 
-![App Screenshot](https://drive.google.com/file/d/1eGYZ-28O2eV0oIVlVk6z7oYm6DSkzwZy/view)
+![App Screenshot]([https://drive.google.com/file/d/1eGYZ-28O2eV0oIVlVk6z7oYm6DSkzwZy/view](https://drive.google.com/file/d/1lns3rQg5_jGw4lZoCj6iMqJBOOav5jXl/view?usp=sharing))
 
-![App Screenshot](https://drive.google.com/file/d/1lns3rQg5_jGw4lZoCj6iMqJBOOav5jXl/view?usp=drive_link)
+![App Screenshot]([https://drive.google.com/file/d/1lns3rQg5_jGw4lZoCj6iMqJBOOav5jXl/view?usp=drive_link](https://drive.google.com/file/d/1eGYZ-28O2eV0oIVlVk6z7oYm6DSkzwZy/view?usp=sharing))
 
 
 ## Authors
