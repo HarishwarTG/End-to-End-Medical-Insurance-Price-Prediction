@@ -6,7 +6,7 @@ The primary objective of this project is to develop a predictive model that can 
 
 ## Overview
 
-1.The contains the details (e,g, age, sex, bmi etc.)of 11237 customers.
+1.The contains the details (age, sex, bmi, children, smoking habits and region)of 11237 customers.
 
 2.My project task is to create a machine learning model which can predict the price of insurance on its characteristics.
 
@@ -14,10 +14,8 @@ The primary objective of this project is to develop a predictive model that can 
 
 
 
-
 ## 🛠 Tech used
-Machine Learning,Python
-
+1.Python 2.Sckit-Learn 3.Numpy 4.Pandas 5.Matplotlib 6.Flask 7.HTML/CSS
 
 ## Workflow
 
@@ -32,9 +30,9 @@ Machine Learning,Python
 **5.Model Evaluation and Deployment:** The best-performing model is selected and deployed using Flask for real-world applications.
 ## Screenshots
 
-![App Screenshot](https://drive.google.com/file/d/1eGYZ-28O2eV0oIVlVk6z7oYm6DSkzwZy/view)
+![App Screenshot]([https://drive.google.com/file/d/1eGYZ-28O2eV0oIVlVk6z7oYm6DSkzwZy/view](https://drive.google.com/file/d/1lns3rQg5_jGw4lZoCj6iMqJBOOav5jXl/view?usp=sharing))
 
-![App Screenshot](https://drive.google.com/file/d/1lns3rQg5_jGw4lZoCj6iMqJBOOav5jXl/view?usp=drive_link)
+![App Screenshot]([https://drive.google.com/file/d/1lns3rQg5_jGw4lZoCj6iMqJBOOav5jXl/view?usp=drive_link](https://drive.google.com/file/d/1eGYZ-28O2eV0oIVlVk6z7oYm6DSkzwZy/view?usp=sharing))
 
 
 ## Authors
