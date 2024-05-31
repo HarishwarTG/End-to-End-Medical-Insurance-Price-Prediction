@@ -6,7 +6,11 @@ The primary objective of this project is to develop a predictive model that can 
 
 ## Overview
 
+<<<<<<< HEAD
 1.The contains the details (age, sex, bmi, children, smoking habits and region)of 11237 customers.
+=======
+1.The contains the details (e,g, age, sex, bmi etc.)of 11237 customers.
+>>>>>>> 2c44bae0bcb87dc4d0daebadba6912d1a2fa97c5
 
 2.My project task is to create a machine learning model which can predict the price of insurance on its characteristics.
 
