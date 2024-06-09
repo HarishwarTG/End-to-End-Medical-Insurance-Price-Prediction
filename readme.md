@@ -6,15 +6,11 @@ The primary objective of this project is to develop a predictive model that can 
 
 ## Overview
 
-<<<<<<< HEAD
-1.The contains the details (age, sex, bmi, children, smoking habits and region)of 11237 customers.
-=======
 1.The contains the details (e,g, age, sex, bmi etc.)of 11237 customers.
->>>>>>> 2c44bae0bcb87dc4d0daebadba6912d1a2fa97c5
 
 2.My project task is to create a machine learning model which can predict the price of insurance on its characteristics.
 
-3.For solving this problem, I will approach the task, with a step by step approach to create a data analysis and prediction model based on (machine learning/AI algorithms, regression algorith for example) available from different Python packages, modules and classes
+3.For solving this problem, I will approach the task, with a step by step approach to create a data analysis and prediction model based on (machine learning/AI algorithms, regression algorithm for example) available from different Python packages, modules and classes
 
 
 
@@ -34,9 +30,9 @@ The primary objective of this project is to develop a predictive model that can 
 **5.Model Evaluation and Deployment:** The best-performing model is selected and deployed using Flask for real-world applications.
 ## Screenshots
 
-![App Screenshot]([https://drive.google.com/file/d/1eGYZ-28O2eV0oIVlVk6z7oYm6DSkzwZy/view](https://drive.google.com/file/d/1lns3rQg5_jGw4lZoCj6iMqJBOOav5jXl/view?usp=sharing))
+![App Screenshot]([https://github.com/HarishwarTG/END-TO-END-MEDICAL-INSURANCE-PRICE-PREDICTION/blob/Main/artifacts/screencapture-127-0-0-1-5000-2024-05-30-22_40_54.png?raw=true])
 
-![App Screenshot]([https://drive.google.com/file/d/1lns3rQg5_jGw4lZoCj6iMqJBOOav5jXl/view?usp=drive_link](https://drive.google.com/file/d/1eGYZ-28O2eV0oIVlVk6z7oYm6DSkzwZy/view?usp=sharing))
+![App Screenshot]([https://github.com/HarishwarTG/END-TO-END-MEDICAL-INSURANCE-PRICE-PREDICTION/blob/Main/artifacts/screencapture-127-0-0-1-5000-2024-05-30-22_40_54.png?raw=true])
 
 
 ## Authors
