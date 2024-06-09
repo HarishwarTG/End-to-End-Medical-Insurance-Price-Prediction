@@ -30,9 +30,11 @@ The primary objective of this project is to develop a predictive model that can 
 **5.Model Evaluation and Deployment:** The best-performing model is selected and deployed using Flask for real-world applications.
 ## Screenshots
 
-![App Screenshot](https://github.com/HarishwarTG/END-TO-END-MEDICAL-INSURANCE-PRICE-PREDICTION/blob/Main/artifacts/screencapture-127-0-0-1-5000-2024-05-30-22_40_54.png?raw=true)
+### Screenshot 1
+<img src="https://github.com/HarishwarTG/END-TO-END-MEDICAL-INSURANCE-PRICE-PREDICTION/blob/Main/artifacts/screencapture-127-0-0-1-5000-2024-05-30-22_40_54.png?raw=true" width="400">
 
-![App Screenshot](https://github.com/HarishwarTG/END-TO-END-MEDICAL-INSURANCE-PRICE-PREDICTION/blob/Main/artifacts/screencapture-127-0-0-1-5000-2024-05-30-22_40_54.png?raw=true)
+### Screenshot 2
+<img src="https://github.com/HarishwarTG/END-TO-END-MEDICAL-INSURANCE-PRICE-PREDICTION/blob/Main/artifacts/screencapture-127-0-0-1-5000-predictdata-2024-05-30-22_43_23.png?raw=true" width="400">
 
 
 ## Authors
