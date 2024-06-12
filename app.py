@@ -40,5 +40,5 @@ def predict_datapoint():
         return render_template('home.html', results=results[0])
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", debug=True)
-    #http://127.0.0.1:5000/ --> open to connect
+    app.run(host="0.0.0.0",port=5000)
+    #http://127.0.0.1:5000 --> open to connect

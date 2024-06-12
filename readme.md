@@ -31,10 +31,10 @@ The primary objective of this project is to develop a predictive model that can 
 ## Screenshots
 
 ### Screenshot 1
-<img src="https://github.com/HarishwarTG/END-TO-END-MEDICAL-INSURANCE-PRICE-PREDICTION/blob/Main/artifacts/screencapture-127-0-0-1-5000-2024-05-30-22_40_54.png?raw=true" width="400">
+<img src="https://github.com/HarishwarTG/END-TO-END-MEDICAL-INSURANCE-PRICE-PREDICTION/blob/Main/artifacts/screencapture-127-0-0-1-5000-2024-05-30-22_40_54.png?raw=true" width="600">
 
 ### Screenshot 2
-<img src="https://github.com/HarishwarTG/END-TO-END-MEDICAL-INSURANCE-PRICE-PREDICTION/blob/Main/artifacts/screencapture-127-0-0-1-5000-predictdata-2024-05-30-22_43_23.png?raw=true" width="400">
+<img src="https://github.com/HarishwarTG/END-TO-END-MEDICAL-INSURANCE-PRICE-PREDICTION/blob/Main/artifacts/screencapture-127-0-0-1-5000-predictdata-2024-05-30-22_43_23.png?raw=true" width="600">
 
 
 ## Authors
@@ -44,6 +44,6 @@ The primary objective of this project is to develop a predictive model that can 
 
 ## Acknowledgements
 
- - [Krish Naik](https://www.youtube.com/@krishnaik06) fot End-to-End tutorial.
+ - [Krish Naik](https://www.youtube.com/@krishnaik06) for End-to-End tutorial.
  
 
